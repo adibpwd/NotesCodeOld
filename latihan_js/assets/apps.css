@@ -1,0 +1,31 @@
+#kikuk {
+    color: white;
+    background-color: black;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.kikuk3 {
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 15px;
+
+}
+
+.kikuk3:hover {
+    color: black;
+    background-color: rgb(161, 2, 2);
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+
+.kikuk3:active {
+    color: black;
+    background-color: rgb(0, 255, 0);
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
