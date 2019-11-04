@@ -254,3 +254,7 @@
     function myFunction17() {
         document.getElementById('hasil').innerHTML = kota.unshift('malang');
     }
+
+    function myFunction18() {
+        document.getElementById('hasil').innerHTML = delete kota[0];
+    }
