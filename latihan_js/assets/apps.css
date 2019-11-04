@@ -48,10 +48,11 @@
         border-right: 3px solid black;
         padding: 0 6px;
         margin-left: 3px;
+        transition-property: all;
     }
 
     #buttonTest {
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 10px;
         padding: 5px 10px;
         margin-left: 4px;
@@ -67,4 +68,17 @@
         margin-top: -4px;
         margin-left: 4px;
         margin-left: -2px;
+    }
+
+    #buttonTest:active {
+        background-color: rgb(0, 255, 0);
+        border: 1px solid black;
+        color: black;
+    }
+
+    /* tidak work visited */
+    #buttonTest:visited {
+        background-color: rgb(0, 255, 0);
+        border: 1px solid red;
+        color: black;
     }

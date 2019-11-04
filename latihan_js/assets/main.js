@@ -178,6 +178,8 @@
     a11[1].style.color = "blue";
     a11[2].style.color = "blue";
 
+
+
     function myFunction5() {
         var kk = kota.sort().join(" ");
         document.getElementById("hasil").innerHTML = kk;
@@ -186,4 +188,48 @@
     function myFunction6() {
         var kk = kota.length;
         document.getElementById("hasil").innerHTML = kk;
+    }
+
+    function myFunction7() {
+        kota[0] = Date();
+        kota[1] = myFunction6();
+        kota[2] = e1;
+        document.getElementById("hasil").innerHTML = kota;
+    }
+
+    function myFunction8() {
+        document.getElementById("hasil").innerHTML = kota[kota.length - 1];
+    }
+
+    function myFunction9() {
+        document.getElementById("hasil").innerHTML = kota;
+    }
+
+    //no work
+
+    function myFunction10() {
+        var kk = kota.length;
+        text = "<ul>";
+        for ($i = 0; $i < kk; $i = $i + 1) {
+            text += "<li>" + kota[$i] + "</li>";
+        }
+        text += "</ul>";
+        document.getElementById('hasil').innerHTML = text;
+    }
+
+    function myFunction11() {
+        var kk = kota.length;
+        var $i = 0;
+        text = "<ul>";
+        kota.forEach(ulangi);
+        text += "</ul>";
+        document.getElementById('hasil').innerHTML = text;
+
+        function ulangi(value) {
+            text += "<li>" + value + "</ul>";
+        }
+    }
+
+    function myFunction12() {
+        kota.push("surabaya");
     }
