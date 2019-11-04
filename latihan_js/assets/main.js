@@ -233,3 +233,24 @@
     function myFunction12() {
         kota.push("surabaya");
     }
+
+    function myFunction13() {
+        document.getElementById('hasil').innerHTML = kota instanceof Array;
+    }
+
+    function myFunction14() {
+        document.getElementById('hasil').innerHTML = kota.join(' ');
+    }
+
+    function myFunction15() {
+        document.getElementById('hasil').innerHTML = kota.pop();
+    }
+
+
+    function myFunction16() {
+        document.getElementById('hasil').innerHTML = kota.shift();
+    }
+
+    function myFunction17() {
+        document.getElementById('hasil').innerHTML = kota.unshift('malang');
+    }
