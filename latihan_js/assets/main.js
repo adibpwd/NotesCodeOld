@@ -346,5 +346,23 @@
     }
 
     function help(value) {
-        txt = txt + value+ " ";
+        txt = txt + value + " ";
+    }
+
+    function myFunction29() {
+        number.map(help1);
+        document.getElementById('hasil').innerHTML = txt;
+    }
+
+    function help1(value) {
+        txt = txt + value * 5 + " ";
+    }
+
+    function myFunction30() {
+        kk = number.filter(help2)
+        document.getElementById("hasil").innerHTML = kk;
+    }
+
+    function help2(value) {
+        return value > 30;
     }
