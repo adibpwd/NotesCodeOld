@@ -366,3 +366,12 @@
     function help2(value) {
         return value > 30;
     }
+
+    function myFunction31() {
+        var kk = number.reduce(help3);
+        document.getElementById('hasil').innerHTML = kk;
+    }
+
+    function help3(total, value, index, array) {
+        return total + value;
+    }
