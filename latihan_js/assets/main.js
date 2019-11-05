@@ -12,6 +12,24 @@
     user2 = 5000;
     barang = 10000;
 
+    txt = "";
+    handphone = [{
+            merk: "xiamoi",
+            launched: 2019
+        },
+        {
+            merk: "huawai",
+            launched: 2012
+        },
+        {
+            merk: "oppo",
+            launched: 2020
+        },
+        {
+            merk: "vivo",
+            launched: 2013
+        }
+    ];
     number = [1, 32, 21, 45, 37, 15];
     dusun = ['tambak', 'karangjati', 'tengger', 'setren', 'galsari']
     desa = ['sarirejo',
@@ -303,4 +321,30 @@
 
     function myFunction26() {
         document.getElementById('hasil').innerHTML = Math.min.apply(null, number);
+    }
+
+    // kenapa object pertama munculnya NAN
+    function myFunction27() {
+        handphone.sort(function (a, b) {
+            return a.launched - b.launched
+        });
+        handphoneSpek();
+    }
+
+    function handphoneSpek() {
+        document.getElementById('hasil').innerHTML =
+            handphone[0].type + handphone[0].launched + "<br>" +
+            handphone[1].merk + handphone[1].launched + "<br>" +
+            handphone[2].merk + handphone[2].launched + "<br>" +
+            handphone[3].merk + handphone[3].launched + "<br>"
+    }
+
+
+    function myFunction28() {
+        number.forEach(help);
+        document.getElementById('hasil').innerHTML = txt;
+    }
+
+    function help(value) {
+        txt = txt + value+ " ";
     }
