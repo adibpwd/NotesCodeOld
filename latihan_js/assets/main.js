@@ -11,13 +11,18 @@
     user = 5000;
     user2 = 5000;
     barang = 10000;
-
+    dusun = ['tambak', 'karangjati', 'tengger', 'setren', 'galsari']
+    desa = ['sarirejo',
+        'bandungsari', 'truwolu', 'kalanglundo', 'sendangsuro', 'kuwu'
+    ]
     kota = ["purwodadi", "gorontalo", "depok", "bekasi", "jakarta", "ambon"];
     alamat = {
         dusun: "tambak",
         desa: "sarirejo",
         kecamatan: "ngaringan"
     }
+
+    var hasil = document.getElementById('hasil');
 
     function myFunction3() {
         kikuk6 = e1.concat("", kikuk5);
@@ -259,6 +264,15 @@
         document.getElementById('hasil').innerHTML = delete kota[0];
     }
 
+
     function myFunction19() {
-        kota.splice(2, 0, "Lemon", "Kiwi");
+        kota.splice(1, 0, "ngawi", "cepu");
+    }
+
+    function myFunction20() {
+        kota.splice(0, 1);
+    }
+
+    function myFunction21() {
+        document.getElementById('hasil').innerHTML = kota.concat(dusun, desa);
     }
