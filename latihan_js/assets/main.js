@@ -11,6 +11,8 @@
     user = 5000;
     user2 = 5000;
     barang = 10000;
+
+    number = [1, 32, 21, 45, 37, 15];
     dusun = ['tambak', 'karangjati', 'tengger', 'setren', 'galsari']
     desa = ['sarirejo',
         'bandungsari', 'truwolu', 'kalanglundo', 'sendangsuro', 'kuwu'
@@ -199,7 +201,7 @@
         kota[0] = Date();
         kota[1] = myFunction6();
         kota[2] = e1;
-        document.getElementById("hasil").innerHTML = kota;
+        document.getElementById("hasil").innerHTML = kota.join(' ');
     }
 
     function myFunction8() {
@@ -207,7 +209,7 @@
     }
 
     function myFunction9() {
-        document.getElementById("hasil").innerHTML = kota;
+        document.getElementById("hasil").innerHTML = kota.join(' ');
     }
 
     //no work
@@ -266,13 +268,24 @@
 
 
     function myFunction19() {
-        kota.splice(1, 0, "ngawi", "cepu");
+        kota.splice(1, 0, "ngawi", "cepu").join(' ');
     }
 
     function myFunction20() {
-        kota.splice(0, 1);
+        kota.splice(0, 1).join(' ');
     }
 
     function myFunction21() {
-        document.getElementById('hasil').innerHTML = kota.concat(dusun, desa);
+        document.getElementById('hasil').innerHTML = kota.concat(dusun, desa).join(' ');
+    }
+
+    function myFunction22() {
+        document.getElementById('hasil').innerHTML = kota.reverse().join(' ');
+    }
+
+    function myFunction23() {
+        number.sort(function (a, b) {
+            return a - b
+        });
+        document.getElementById('hasil').innerHTML = number.join();
     }
