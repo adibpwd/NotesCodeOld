@@ -289,3 +289,18 @@
         });
         document.getElementById('hasil').innerHTML = number.join();
     }
+
+    function myFunction24() {
+        number.sort(function (a, b) {
+            return 0.5 - Math.random();
+        });
+        document.getElementById('hasil').innerHTML = number.join();
+    }
+
+    function myFunction25() {
+        document.getElementById('hasil').innerHTML = Math.max.apply(null, number);
+    }
+
+    function myFunction26() {
+        document.getElementById('hasil').innerHTML = Math.min.apply(null, number);
+    }
