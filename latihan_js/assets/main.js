@@ -258,3 +258,7 @@
     function myFunction18() {
         document.getElementById('hasil').innerHTML = delete kota[0];
     }
+
+    function myFunction19() {
+        kota.splice(2, 0, "Lemon", "Kiwi");
+    }
