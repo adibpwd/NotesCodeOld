@@ -375,7 +375,7 @@
     function help3(total, value, index, array) {
         return total + value;
     }
-    
+
     function myFunction32() {
         var kk = number.reduceRight(help4);
         document.getElementById('hasil').innerHTML = kk;
@@ -383,4 +383,13 @@
 
     function help4(total, value, index, array) {
         return total + value;
+    }
+
+    function myFunction33() {
+        var kk = number.every(help5);
+        document.getElementById('hasil').innerHTML = "apakah " + number.join(" ") + " lebih besar dari 20 = " + kk;
+    }
+
+    function help5(total, value, index, array) {
+        return value > 20;
     }
