@@ -405,6 +405,11 @@
     }
 
     function myFunction35() {
-        var kk = kota.indexOf("jakarta");
-        document.getElementById('hasil').innerHTML = 'jakarta berada diindex ke ' + kk;
+        var kk = kota.indexOf("surabaya");
+        document.getElementById('hasil').innerHTML = 'surabaya berada diindex ke ' + kk;
+    }
+
+    function myFunction36() {
+        var kk = kota.lastIndexOf("surabaya");
+        document.getElementById('hasil').innerHTML = 'surabaya terakhir berada diindex ke ' + kk;
     }
