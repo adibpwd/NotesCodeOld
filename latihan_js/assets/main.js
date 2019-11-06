@@ -11,7 +11,7 @@
     user = 5000;
     user2 = 5000;
     barang = 10000;
-
+    var d = Date();
     txt = "";
     handphone = [{
             merk: "xiamoi",
@@ -431,4 +431,10 @@
 
     function help8(total, value, index, array) {
         return value > 20;
+    }
+
+    //kenapa var d nya tidak bisa ditaruh diluar
+    function myFunction39() {
+        var d = new Date();
+        document.getElementById('hasil').innerHTML = d.getFullYear();
     }
