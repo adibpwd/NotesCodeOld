@@ -413,3 +413,22 @@
         var kk = kota.lastIndexOf("surabaya");
         document.getElementById('hasil').innerHTML = 'surabaya terakhir berada diindex ke ' + kk;
     }
+
+    //kenapa hasilnya undefined bukan 21
+    function myFunction37() {
+        var kk = number.find(help7);
+        document.getElementById('hasil').innerHTML = number.join(' ') + " yang lebih besar dan terdekat dari 20 adalah " + kk;
+    }
+
+    function help7(total, value, index, array) {
+        return value > 20;
+    }
+
+    function myFunction38() {
+        var kk = number.findIndex(help8);
+        document.getElementById('hasil').innerHTML = number.join(' ') + "index keberapa value yang lebih besar dan terdekat dari 20 adalah " + kk;
+    }
+
+    function help8(total, value, index, array) {
+        return value > 20;
+    }
