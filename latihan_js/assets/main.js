@@ -393,7 +393,7 @@
     function help5(total, value, index, array) {
         return value > 20;
     }
- 
+
     // kenapa hasilya tidak true harusnya true
     function myFunction34() {
         var kk = number.some(help6);
@@ -402,4 +402,9 @@
 
     function help6(total, value, index, array) {
         return value > 20;
+    }
+
+    function myFunction35() {
+        var kk = kota.indexOf("jakarta");
+        document.getElementById('hasil').innerHTML = 'jakarta berada diindex ke ' + kk;
     }
