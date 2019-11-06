@@ -393,3 +393,13 @@
     function help5(total, value, index, array) {
         return value > 20;
     }
+ 
+    // kenapa hasilya tidak true harusnya true
+    function myFunction34() {
+        var kk = number.some(help6);
+        document.getElementById('hasil').innerHTML = "apakah salah satu " + number.join(" ") + " lebih besar dari 20 = " + kk;
+    }
+
+    function help6(total, value, index, array) {
+        return value > 20;
+    }
