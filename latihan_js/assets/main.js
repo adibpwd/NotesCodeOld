@@ -499,3 +499,8 @@
     function myFunction46() {
         document.getElementById('hasil').innerHTML = "membulatkan keangka terdekat kebawah contoh 8.3 = " + Math.floor(8.3);
     }
+
+    function myFunction47() {
+        document.getElementById("hasil").innerHTML =
+            "belum ngerti kenapa hasilnya " + Math.sin(90 * Math.PI / 180);
+    }
