@@ -456,16 +456,17 @@
         // hourMagrib.setHours(18);
         var hourIsya = new Date();
         // hourIsya.setHours(19);
+        console.log(hourSubuh.setHours(4), Date.now());
 
-        if (hour.getHours() > hourSubuh.setHours(4)) {
+        if (Date.now() > hourSubuh.setHours(4)) {
             document.getElementById('hasil').innerHTML = "udah masuk waktu sholat subuh";
-        } else if (hour.getHours() > hourDuhur.setHours(12)) {
+        } else if (Date.now() > hourDuhur.setHours(12)) {
             document.getElementById('hasil').innerHTML = "udah masuk waktu sholat duhur";
-        } else if (hour.getHours() > hourAsar.setHours(15)) {
+        } else if (Date.now() > hourAsar.setHours(15)) {
             document.getElementById('hasil').innerHTML = "udah masuk waktu sholat asar";
-        } else if (hour.getHours() > hourMagrib.setHours(18)) {
+        } else if (Date.now() > hourMagrib.setHours(18)) {
             document.getElementById('hasil').innerHTML = "udah masuk waktu sholat magrib";
-        } else if (hour.getHours() > hourIsya.setHours(19)) {
+        } else if (Date.now() > hourIsya.setHours(19)) {
             document.getElementById('hasil').innerHTML = "udah masuk waktu sholat isya";
         } else {
             document.getElementById('hasil').innerHTML = "udah masuk waktu sholat tahajud";
@@ -485,4 +486,8 @@
 
     function myFunction43() {
         document.getElementById('hasil').innerHTML = "akar kuadrat dari 64 adalah " + Math.sqrt(64);
+    }
+
+    function myFunction44() {
+        document.getElementById('hasil').innerHTML = "dari negatif  -8.898  ke positif  " + Math.abs(-8.898);
     }
