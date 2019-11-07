@@ -495,3 +495,7 @@
     function myFunction45() {
         document.getElementById('hasil').innerHTML = "membulatkan keangka terdekat keatas contoh 8.3 = " + Math.ceil(8.3);
     }
+
+    function myFunction46() {
+        document.getElementById('hasil').innerHTML = "membulatkan keangka terdekat kebawah contoh 8.3 = " + Math.floor(8.3);
+    }
