@@ -506,6 +506,19 @@
     }
 
     function myFunction48() {
-        document.getElementById("hasil").innerHTML = 
-"belum ngerti kenapa hasilnya " + Math.cos(0 * Math.PI / 180);
+        document.getElementById("hasil").innerHTML =
+            "belum ngerti kenapa hasilnya " + Math.cos(0 * Math.PI / 180);
+    }
+
+    function myFunction49() {
+        document.getElementById('hasil').innerHTML = "mengacak nomor dari 0 sampai 1000 = " + Math.floor(Math.random() * 1001);
+    }
+
+    function myFunction50(min, max) {
+        document.getElementById('hasil').innerHTML = "mengacak nomor dari 0 sampai 1000 = " + Math.floor(Math.random() * (max - min));
+    }
+
+    function myFunction51() {
+        document.getElementById('hasil').innerHTML = "apakah 20 lebih kecil dari 25 " + Boolean(20 < 25) + ", apakah 23 lebih besar dari 17 " + Boolean(23 > 17) + ", apakah 9 sama dengan angka 9 " + Boolean(9 == 9) +
+            "<br><br> <b>Note : semua value akan keluar false seperti angka 0, -0, string kosong, null, Nan, variabel yang valuenya false semua tadi akan mengeluarkan false.<br>kalau pakai = = = harus sama antara value dan type</b>";
     }
