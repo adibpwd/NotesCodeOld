@@ -11,6 +11,9 @@
     user = 5000;
     user2 = 5000;
     barang = 10000;
+
+    var months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+    var day = ["minggu", "senin", "selasa", "rabu", "kamis", "jumat", "sabtu"]
     var d = Date();
     txt = "";
     handphone = [{
@@ -434,7 +437,43 @@
     }
 
     //kenapa var d nya tidak bisa ditaruh diluar
+    // commit perbaikan date()
     function myFunction39() {
         var d = new Date();
-        document.getElementById('hasil').innerHTML = d.getFullYear();
+        document.getElementById('hasil').innerHTML = day[d.getDay()] + ", " + d.getDate() + " " + months[d.getMonth()] + " " + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + ":" + d.getMilliseconds();
+    }
+
+    //masih belum berhasil
+    function myFunction40() {
+        var hour = new Date();
+        var hourSubuh = new Date();
+        // hourSubuh.setHours(4);
+        var hourDuhur = new Date();
+        // hourDuhur.setHours(12);
+        var hourAsar = new Date();
+        // hourAsar.setHours(15);
+        var hourMagrib = new Date();
+        // hourMagrib.setHours(18);
+        var hourIsya = new Date();
+        // hourIsya.setHours(19);
+
+        if (hour.getHours() > hourSubuh.setHours(4)) {
+            document.getElementById('hasil').innerHTML = "udah masuk waktu sholat subuh";
+        } else if (hour.getHours() > hourDuhur.setHours(12)) {
+            document.getElementById('hasil').innerHTML = "udah masuk waktu sholat duhur";
+        } else if (hour.getHours() > hourAsar.setHours(15)) {
+            document.getElementById('hasil').innerHTML = "udah masuk waktu sholat asar";
+        } else if (hour.getHours() > hourMagrib.setHours(18)) {
+            document.getElementById('hasil').innerHTML = "udah masuk waktu sholat magrib";
+        } else if (hour.getHours() > hourIsya.setHours(19)) {
+            document.getElementById('hasil').innerHTML = "udah masuk waktu sholat isya";
+        } else {
+            document.getElementById('hasil').innerHTML = "udah masuk waktu sholat tahajud";
+        }
+
+
+    }
+
+    function myFunction41() {
+        document.getElementById('hasil').innerHTML = "angka terdekat dari 8 sampai 10 adalah " + Math.round(8.10);
     }
