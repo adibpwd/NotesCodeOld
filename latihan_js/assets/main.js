@@ -477,3 +477,12 @@
     function myFunction41() {
         document.getElementById('hasil').innerHTML = "angka terdekat dari 8 sampai 10 adalah " + Math.round(8.10);
     }
+
+
+    function myFunction42() {
+        document.getElementById('hasil').innerHTML = "15 x 15 = " + Math.pow(15, 2);
+    }
+
+    function myFunction43() {
+        document.getElementById('hasil').innerHTML = "akar kuadrat dari 64 adalah " + Math.sqrt(64);
+    }
