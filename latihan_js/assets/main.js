@@ -504,3 +504,8 @@
         document.getElementById("hasil").innerHTML =
             "belum ngerti kenapa hasilnya " + Math.sin(90 * Math.PI / 180);
     }
+
+    function myFunction48() {
+        document.getElementById("hasil").innerHTML = 
+"belum ngerti kenapa hasilnya " + Math.cos(0 * Math.PI / 180);
+    }
