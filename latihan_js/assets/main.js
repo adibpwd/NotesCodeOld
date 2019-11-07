@@ -491,3 +491,7 @@
     function myFunction44() {
         document.getElementById('hasil').innerHTML = "dari negatif  -8.898  ke positif  " + Math.abs(-8.898);
     }
+
+    function myFunction45() {
+        document.getElementById('hasil').innerHTML = "membulatkan keangka terdekat keatas contoh 8.3 = " + Math.ceil(8.3);
+    }
