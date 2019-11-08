@@ -522,3 +522,18 @@
         document.getElementById('hasil').innerHTML = "apakah 20 lebih kecil dari 25 " + Boolean(20 < 25) + ", apakah 23 lebih besar dari 17 " + Boolean(23 > 17) + ", apakah 9 sama dengan angka 9 " + Boolean(9 == 9) +
             "<br><br> <b>Note : semua value akan keluar false seperti angka 0, -0, string kosong, null, Nan, variabel yang valuenya false semua tadi akan mengeluarkan false.<br>kalau pakai = = = harus sama antara value dan type</b>";
     }
+
+    function myFunction52() {
+        var a = 8;
+        var c = '8';
+        document.getElementById('hasil').innerHTML =
+            ' angka 8 == string 8 ' + (a == c) + ' ] valuenya sama / tidak' +
+            '<br>angka 8 === string 8 ' + (a === c) + ' ] value dan type sama / tidak' +
+            '<br>angka 8 != string 8 ' + (a != c) + ' ] value tidak sama / sama' +
+            '<br>angka 8 !== string 8 ' + (a !== c) + ' ] value dan type tidak sama / sama' +
+            '<br>angka 8 < string 8 ' + (a < c) +
+            '<br>angka 8 > string 8 ' + (a > c) +
+            '<br>angka 8 <= string 8 ' + (a <= c) +
+            '<br>angka 8 >= string 8 ' + (a >= c);
+    }
+
